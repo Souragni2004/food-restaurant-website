@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        *
+        {
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body
+        {
+            background-image: url('res2.jpg');
+            background-size:cover;
+        }
+        .container
+        {
+            text-align: center;
+            padding: 30px 0 20px;
+        }
+        .container h1{
+            margin:0;
+            padding:0;
+            color:#262626;
+            text-transform: uppercase;
+            font-size: 36px;
+            color: azure;
+        }
+        .container2
+        {
+            width:50%;
+            height: 400px;
+            background-size: #fff;
+            margin: 0 auto;
+            border:3px solid #fff;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+        }
+        .container2 .left
+        {
+            float:left;
+            width:50%;
+            height: 100%;
+            background-image: url('res.jpg');
+            background-size:cover;
+        }
+        .container2 .right
+        {
+            float:right;
+            width:50%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .form
+        {
+            width:100%;
+            padding:60px 40px;
+            box-sizing: border-box;
+            height: 400px;
+            background-color: #fff;
+        }
+        .form p
+        {
+            margin: 0;
+            padding:0;
+            font-weight: bold;
+            color:#a6af13;
+        }
+        .form input,.form select
+        {
+             margin-bottom: 20px;
+        }
+        .form input[type="text"], .form input[type="number"],.form select
+        {
+            border:none;
+            border-bottom: 2px solid #a6af13;
+            outline:none;
+            height: 40px;
+        }
+        .form input[type="text"]:focus, .form input[type="number"]:focus,.form select:focus
+        {
+            border-bottom:2px solid #262626;
+        }
+        .form input[type="submit"]
+        {
+            border: none;
+            outline:none;
+            height: 40px;
+            color:#fff;
+            background-color: #262626;
+            cursor: pointer;
+            width: 50%;
+        }
+        .form input[type="submit"]:hover
+        {
+            background:#a6af13;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><h1>Book your delivery</h1></div>
+    <div class="container2">
+        <div class="left"></div>
+        <div class="right">
+            <div class="form">
+                <form action="database.php" method="post" name="myform">
+                    <p>Username</p>
+                    <input type="text" name="fname" placeholder="Enter username">
+                    <p>Mobile Number</p>
+                    <input type="number" name="fmob" placeholder="Enter mobile number">
+                    <p>Select the desired food from the List</p>
+                    <select name="food">
+                        <option value="Chicken Biriyani">Chicken Biriyani--Rs.150</option>
+                        <option value="Paneer Paratha">Paneer Paratha--Rs.80</option>
+                        <option value="Chicken Grilled Momos">Chicken Grilled Momos(8pcs)--Rs.120</option>
+                        <option value="Egg Fried Rice">Egg Fried Rice--Rs.130</option>
+                        <option value="Special Hakka Noodles">Special Hakka Noodles--Rs.180</option>
+                        <option value="Shahi Paneer">Shahi Paneer--Rs.170</option>
+                        <option value="Chicken Butter Masala">Chicken Butter Masala--Rs.250</option>
+                        <option value="Chilli Chicken">Chilli Chicken--Rs.130</option>
+                    </select>
+                    <input type="submit" value="Submit" name="submit" src="index.html">
+                </form>
+            </div>
+        </div>
+
+    </div>
+        
+</body>
+</html>
